@@ -19,10 +19,10 @@ const sizes = [
 ]
 
 const weights = [
-  { label: 'Bold',     value: 'var(--font-bold)' },
-  { label: 'Semibold', value: 'var(--font-semibold)' },
-  { label: 'Medium',   value: 'var(--font-medium)' },
-  { label: 'Regular',  value: 'var(--font-regular)' },
+  { label: 'Bold',     px: '700', value: 'var(--font-bold)' },
+  { label: 'Semibold', px: '600', value: 'var(--font-semibold)' },
+  { label: 'Medium',   px: '500', value: 'var(--font-medium)' },
+  { label: 'Regular',  px: '400', value: 'var(--font-regular)' },
 ]
 
 export const TypeScale: Story = {
@@ -50,9 +50,10 @@ export const TypeScale: Story = {
       <section className="mb-12">
         <h2 className="text-xs font-semibold text-text-muted uppercase tracking-widest mb-4">Font Weights</h2>
         <div className="flex flex-col gap-3">
-          {weights.map(({ label, value }) => (
+          {weights.map(({ label, px, value }) => (
             <div key={label} className="flex items-baseline gap-6">
               <span className="w-20 text-xs text-text-subtle font-mono shrink-0">{label}</span>
+              <span className="w-10 text-xs text-text-muted  font-mono shrink-0">{px}</span>
               <span style={{ fontSize: 'var(--text-xl)', fontWeight: value, color: 'var(--color-text)' }}>
                 The quick brown fox
               </span>

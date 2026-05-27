@@ -1,0 +1,62 @@
+import { Meta, Canvas, Controls, Story } from '@storybook/blocks'
+import * as InputStories from './Input.stories'
+
+<Meta of={InputStories} />
+
+# Input
+
+A text input field for collecting user data in forms.
+
+## Usage
+
+```tsx
+import { Input, Label, FieldDescription } from '@petal-ui/ui'
+
+<div className="flex flex-col gap-1.5">
+  <Label htmlFor="email">Email</Label>
+  <Input id="email" type="email" placeholder="you@example.com" />
+  <FieldDescription>We'll never share your email.</FieldDescription>
+</div>
+```
+
+## With label and description
+
+Always pair an `Input` with a `Label` for accessibility. Use `FieldDescription` to provide additional context.
+
+<Canvas of={InputStories.WithLabelAndDescription} />
+
+## Description placement
+
+`FieldDescription` is a separate component — place it wherever the context calls for.
+
+**Below the field** — use for helper text, examples, or supplementary info that the user reads after deciding to interact.
+
+<Canvas of={InputStories.WithLabelAndDescription} />
+
+**Above the field** — use for prerequisites or constraints that affect how the user fills in the field.
+
+<Canvas of={InputStories.DescriptionAbove} />
+
+## Required fields
+
+Add the `required` prop to `Label` to show a visual indicator.
+
+<Canvas of={InputStories.Required} />
+
+## Error state
+
+Use `variant="error"` on the input and color the `FieldDescription` with `text-destructive` to communicate validation errors.
+
+<Canvas of={InputStories.Error} />
+
+## Disabled state
+
+<Canvas of={InputStories.Disabled} />
+
+## Sizes
+
+<Canvas of={InputStories.AllSizes} />
+
+## Props
+
+<Controls of={InputStories.Default} />

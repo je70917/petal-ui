@@ -1,1 +1,76 @@
-@import '../../packages/ui/src/styles.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Colors ── */
+    --color-primary:           #363f88;
+    --color-primary-hover:     #2d3575;
+    --color-primary-fg:        #ffffff;
+
+    --color-secondary:         #f3f4f6;
+    --color-secondary-hover:   #e5e7eb;
+    --color-secondary-fg:      #111827;
+
+    --color-destructive:       #9f284c;
+    --color-destructive-hover: #87223f;
+    --color-destructive-fg:    #ffffff;
+
+    --color-surface:           #ffffff;
+    --color-surface-raised:    #f9fafb;
+    --color-border:            #e5e7eb;
+    --color-ring:              #363f88;
+
+    --color-text:              #111827;
+    --color-text-muted:        #6b7280;
+    --color-text-subtle:       #9ca3af;
+
+    /* ── Typography ── */
+    --font-sans:   'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-mono:   'JetBrains Mono', ui-monospace, monospace;
+
+    --text-xs:     0.75rem;
+    --text-sm:     0.875rem;
+    --text-base:   1rem;
+    --text-lg:     1.125rem;
+    --text-xl:     1.25rem;
+    --text-2xl:    1.5rem;
+    --text-3xl:    1.875rem;
+    --text-4xl:    2.25rem;
+
+    --leading-tight:  1.25;
+    --leading-normal: 1.5;
+    --leading-loose:  1.75;
+
+    --font-regular:   400;
+    --font-medium:    500;
+    --font-semibold:  600;
+    --font-bold:      700;
+
+    /* ── Border radius ── */
+    --radius-none: 0px;
+    --radius-sm:   0.125rem;
+    --radius-md:   0.375rem;
+    --radius-lg:   0.5rem;
+    --radius-xl:   0.75rem;
+    --radius-2xl:  1rem;
+    --radius-full: 9999px;
+
+    /* ── Semantic headings ── */
+    --text-h1: var(--text-3xl);
+    --text-h2: var(--text-2xl);
+    --text-h3: var(--text-xl);
+    --text-h4: var(--text-lg);
+
+    /* ── Shadows ── */
+    --shadow-sm:  0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md:  0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  h1 { font-size: var(--text-h1); font-weight: var(--font-bold);     line-height: var(--leading-tight); }
+  h2 { font-size: var(--text-h2); font-weight: var(--font-bold);     line-height: var(--leading-tight); }
+  h3 { font-size: var(--text-h3); font-weight: var(--font-semibold); line-height: var(--leading-tight); }
+  h4 { font-size: var(--text-h4); font-weight: var(--font-semibold); line-height: var(--leading-normal); }
+}

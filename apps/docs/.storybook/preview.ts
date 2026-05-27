@@ -11,7 +11,7 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Tokens', ['Colors', 'Typography', 'Border Radius'], 'Components'],
+        order: ['Tokens', ['Colors', 'Typography', 'Border Radius'], 'Components', ['Button', 'Input', 'Select', 'Checkbox', 'Toggle', 'Badge', 'Card', 'Dialog', 'Tooltip', 'DropdownMenu', 'Table', 'Textarea', 'Alert', 'Toast']],
       },
     },
   },

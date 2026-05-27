@@ -5,22 +5,22 @@
 @layer base {
   :root {
     /* ── Colors ── */
-    --color-primary:           #7c3aed;
-    --color-primary-hover:     #6d28d9;
+    --color-primary:           #363f88;
+    --color-primary-hover:     #2d3575;
     --color-primary-fg:        #ffffff;
 
     --color-secondary:         #f3f4f6;
     --color-secondary-hover:   #e5e7eb;
     --color-secondary-fg:      #111827;
 
-    --color-destructive:       #dc2626;
-    --color-destructive-hover: #b91c1c;
+    --color-destructive:       #9f284c;
+    --color-destructive-hover: #87223f;
     --color-destructive-fg:    #ffffff;
 
     --color-surface:           #ffffff;
     --color-surface-raised:    #f9fafb;
     --color-border:            #e5e7eb;
-    --color-ring:              #7c3aed;
+    --color-ring:              #363f88;
 
     --color-text:              #111827;
     --color-text-muted:        #6b7280;
