@@ -44,6 +44,8 @@ All tokens are CSS custom properties defined in **two places that must be kept i
 
 When updating a token value, always update both files.
 
+**Tailwind config**: `packages/ui/tailwind.config.ts` and `apps/docs/tailwind.config.ts` must also be kept in sync — Storybook uses the docs config to generate utility classes for component stories.
+
 ### Layers
 - **Scale tokens** — the full range of available values (`--text-sm`, `--radius-md`, etc.)
 - **Semantic tokens** — decisions made on top of the scale (`--text-h1: var(--text-3xl)`)

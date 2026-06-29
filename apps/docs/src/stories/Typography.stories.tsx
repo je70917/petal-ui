@@ -30,7 +30,7 @@ export const TypeScale: Story = {
   render: () => (
     <div className="p-6 bg-surface min-h-screen">
       <h1 className="text-2xl font-bold text-text mb-1">Typography</h1>
-      <p className="text-text-muted mb-10">Font: <span className="font-mono text-sm">--font-sans</span> (Inter)</p>
+      <p className="text-text-muted mb-10">Font: <span className="font-mono text-sm">--font-sans</span> (DM Sans)</p>
 
       <section className="mb-12">
         <h2 className="text-xs font-semibold text-text-muted uppercase tracking-widest mb-4">Type Scale</h2>

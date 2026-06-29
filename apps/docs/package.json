@@ -7,7 +7,8 @@
     "build": "storybook build -o storybook-static"
   },
   "dependencies": {
-    "@petal-ui/ui": "workspace:*"
+    "@petal-ui/ui": "workspace:*",
+    "@phosphor-icons/react": "^2.1.10"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.1.6",

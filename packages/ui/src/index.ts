@@ -75,4 +75,13 @@ export {
   DialogDescription,
 } from './components/Dialog'
 
+export { BarChart } from './components/BarChart'
+export type { BarChartProps, BarSeries } from './components/BarChart'
+
+export { LineChart } from './components/LineChart'
+export type { LineChartProps, LineSeries } from './components/LineChart'
+
+export { PieChart } from './components/PieChart'
+export type { PieChartProps, PieSlice } from './components/PieChart'
+
 export { cn } from './utils/cn'

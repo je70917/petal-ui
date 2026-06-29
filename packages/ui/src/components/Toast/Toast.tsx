@@ -1,4 +1,5 @@
 import * as RadixToast from '@radix-ui/react-toast'
+import { XIcon } from '@phosphor-icons/react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '../../utils/cn'
 
@@ -19,9 +20,9 @@ const toastVariants = cva(
     variants: {
       variant: {
         default:     'border-border bg-surface text-text',
-        success:     'border-green-200 bg-green-50 text-green-900',
-        warning:     'border-yellow-200 bg-yellow-50 text-yellow-900',
-        destructive: 'border-red-200 bg-red-50 text-destructive',
+        success:     'border-success-border bg-success-subtle text-success-text',
+        warning:     'border-warning-border bg-warning-subtle text-warning-text',
+        destructive: 'border-destructive-border bg-destructive-subtle text-destructive',
       },
     },
     defaultVariants: { variant: 'default' },
@@ -55,7 +56,7 @@ export function ToastClose({ className, ...props }: React.ComponentPropsWithoutR
       className={cn('shrink-0 rounded-md p-1 opacity-50 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring', className)}
       {...props}
     >
-      <CloseIcon className="h-4 w-4" />
+      <XIcon size={16} />
     </RadixToast.Close>
   )
 }
@@ -69,10 +70,3 @@ export function ToastAction({ className, ...props }: React.ComponentPropsWithout
   )
 }
 
-function CloseIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M18 6 6 18M6 6l12 12" />
-    </svg>
-  )
-}
